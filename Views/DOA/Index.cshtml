@@ -1,0 +1,17 @@
+﻿@model DaysViewModel
+
+
+@{
+    ViewData["Title"] = "Item";
+}
+
+<h2>Item</h2>
+
+@foreach (var item in Model.AllDaysFromVM)
+{
+
+    <br />
+    @item.Title
+    <br />
+
+}
